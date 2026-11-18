@@ -1,0 +1,1520 @@
+
+body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5; 
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            min-height: 100vh;
+            padding: 1rem; 
+        }
+       
+        h1 {
+            font-size: 2rem;
+            color: #333; 
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #555; 
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            color: #777; 
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1rem;
+            color: #888; /* Light gray text color */
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #007bff; /* Bootstrap primary color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .div-clas{
+            display: flex;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .flex-row {
+            flex-direction: row;
+        }
+        .justify-center {
+            justify-content: right;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .items-center {
+            align-items: right;
+        }
+        .items-start {
+            align-items: flex-start;
+        }
+        .items-end {
+            align-items: flex-end;
+        }
+        .min-w-fit {
+            min-width: fit-content;
+        }
+        .w-full {
+            width: 100%;
+        }
+
+        .w-fit {
+            width: fit-content;
+        }
+        .h-full {
+            height: 100%;
+        }   
+        .h-10 {
+            height: 2.5rem;
+        }
+        .h-20 {
+            height: 5rem;
+        }
+        .shadow-sm {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        .shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .transition-background {
+            transition: background-color 0.3s ease-in-out;
+        }
+        .transition-colors {
+            transition: color 0.3s ease-in-out;
+        }
+        .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
+        .transition-duration-150 {
+            transition-duration: 150ms;
+        }
+        .transition-ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+        .motion-reduce\\:transition-none {
+            transition: none;
+        }
+        .is-filled {
+            background-color: #f3f4f6;
+        }
+        .is-filled-within {
+            background-color: #e5e7eb;
+        }
+        .is-filled input:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="text"] {
+            color: #111827;
+        }
+        .is-filled input[type="text"]:focus {
+            color: #1f2937;
+        }
+        .is-filled input[type="text"]::placeholder {
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+        .bg-background {
+            background-color: #ffffff;
+        }
+        .rounded-xl {
+            border-radius: 12px;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-zoom-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-zoom-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .swiper-wrapper {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+        .swiper-slide {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-horizontal {
+            flex-direction: row;
+        }
+        .swiper-vertical {
+            flex-direction: column;
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #007aff;
+        }
+        .text-base {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .text-lg {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .text-md {
+            font-size: 16px;
+            line-height: 24px;
+        }
+      
+        .bg-gray-100 {
+            background-color: #f3f4f6;
+        }
+        .bg-gray-300 {
+            background-color: #d1d5db;
+        }
+        .bg-danger {
+            background-color: #f87171;
+        }
+        .text-danger-foreground {
+            color: #ffffff;
+        }
+        .border-2 {
+            border-width: 2px;
+        }
+        .border-background {
+            border-color: #ffffff;
+        }
+        .border-default-200 {
+            border-color: #e5e7eb;
+        }
+        .border-default-400 {
+            border-color: #9ca3af;
+        }
+
+
+.border-default-foreground {
+            border-color: #111827;
+        }
+        .rounded-full {
+            border-radius: 9999px;
+        }
+        .py-1 {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .px-1 {
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+        }
+        .px-2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .gap-1 {
+            gap: 0.25rem;
+        }
+        .gap-2 {
+            gap: 0.5rem;
+        }
+        .gap-3 {
+            gap: 0.75rem;
+        }
+        .gap-4 {
+            gap: 1rem;
+        }
+        .gap-6 {
+            gap: 1.5rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .flex-row {
+            flex-direction: row;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .items-start {
+            align-items: flex-start;
+        }
+        .items-end {
+            align-items: flex-end;
+        }
+        .min-w-fit {
+            min-width: fit-content;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .w-fit {
+            width: fit-content;
+        }
+        .h-full {
+            height: 100%;
+        }
+        .h-10 {
+            height: 2.5rem;
+        }
+        .h-20 {
+            height: 5rem;
+        }
+        .shadow-sm {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        .shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .transition-background {
+            transition: background-color 0.3s ease-in-out;
+        }
+        .transition-colors {
+            transition: color 0.3s ease-in-out;
+        }
+        .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
+        .transition-duration-150 {
+            transition-duration: 150ms;
+        }
+        .transition-ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+        .motion-reduce\\:transition-none {
+            transition: none;
+        }
+        .is-filled {
+            background-color: #f3f4f6;
+        }
+        .is-filled-within {
+            background-color: #e5e7eb;
+        }
+        .is-filled input {
+            background-color: transparent;
+        }
+        .is-filled input:focus {
+            outline: none;
+        }
+        .is-filled input[type="file"]::file-selector-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .is-filled input[type="file"]::file-selector-button:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus {
+            outline: none;
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+
+
+outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+
+
+.is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }  
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+
+
+.is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+
+.is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:hover {
+            background-color: #d1d5db;
+            color: #6b7280;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus::placeholder {
+            color: transparent;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+
+        .is-filled input[type="file"]::file-selector-button:focus-visible:focus-visible::placeholder {
+            color: transparent;
+        }
+        .h3 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 2.25rem;
+        }
+        .h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2rem;
+        }
+        .h5 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.75rem;
+        }
+        .h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+        }
+        .text-gray-500 {
+            color: #6b7280;
+        }
+        .text-gray-700 {
+            color: #374151;
+        }
+        .text-gray-900 {
+            color: #111827;
+        }
+        .text-gray-200 {
+            color: #e5e7eb;
+        }
+        .text-gray-100 {
+            color: #f3f4f6;
+        }
+        .text-blue-500 {
+            color: #3b82f6;
+        }
+        .text-blue-600 {
+            color: #2563eb;
+        }
+        .text-blue-700 {
+            color: #1d4ed8;
+        }
+        .text-blue-800 {
+            color: #1e40af;
+        }
+        .text-blue-900 {
+            color: #1e3a8a;
+        }
+        .text-blue-400 {
+            color: #60a5fa;
+        }
+        .text-blue-300 {
+            color: #93c5fd;
+        }
+        .text-blue-200 {
+            color: #bfdbfe;
+        }
+        .text-green-100 {
+            color: #d1fae5;
+        }
+        .text-red-500 {
+            color: #ef4444;
+        }
+        .text-red-600 {
+            color: #dc2626;
+        }
+        .text-red-700 {
+            color: #b91c1c;
+        }
+        .text-red-800 {
+            color: #991b1b;
+        }
+        .text-red-900 {
+            color: #7f1d1d;
+        }
+        .text-red-400 {
+            color: #f87171;
+        }
+
+@keyframes reader-enter {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: reader-enter 0.55s ease-out both;
+}
+
+.main-contant {
+    animation: reader-enter 0.65s 0.08s ease-out both;
+}
+
+.swiper-slide img {
+    animation: reader-enter 0.65s 0.16s ease-out both;
+}
+
+button {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: block;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: clamp(12px, 2vw, 28px);
+    box-sizing: border-box;
+}
+
+.main-contant {
+    margin: 0 0 20px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.container .bg-background.py-3 {
+    position: sticky;
+    top: 8px;
+    z-index: 5;
+    box-shadow: 0 4px 16px rgba(24, 39, 65, 0.08);
+}
+
+.container .bg-background.py-3 > .flex {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.container .bg-background.py-3 button {
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.container .w-full.h-full.bg-background {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.swiper {
+    height: auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(100svh - 190px);
+    object-fit: contain;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .container {
+        padding: 12px;
+    }
+
+    .container .bg-background.py-3 > .flex {
+        justify-content: center;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .container .bg-background.py-3 .gap-6 {
+        gap: 8px;
+    }
+
+    .container .bg-background.py-3 .zoom {
+        padding-right: 0;
+    }
+
+    .main-contant {
+        margin-bottom: 12px;
+    }
+
+    .swiper-slide img {
+        max-height: none;
+    }
+}
+
+body {
+    background: #f1f2f5;
+    color: #182230;
+    font-family: Inter, "Segoe UI", sans-serif;
+}
+
+.reader-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    min-height: 64px;
+    align-items: center;
+    gap: clamp(16px, 3vw, 36px);
+    padding: 8px clamp(16px, 3vw, 40px);
+    border-bottom: 1px solid #e5e7eb;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 12px rgba(22, 34, 51, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.reader-brand {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    color: #24344a;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.reader-brand img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.reader-search {
+    display: flex;
+    width: min(260px, 26vw);
+    min-width: 140px;
+    height: 38px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    border: 1px solid #e6e9ef;
+    border-radius: 999px;
+    background: #fafbfc;
+    color: #8b95a5;
+}
+
+.reader-search input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #24344a;
+    font: inherit;
+}
+
+.reader-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(12px, 2vw, 28px);
+}
+
+.reader-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #344256;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.reader-nav a:hover {
+    color: #247b9b;
+}
+
+.reader-nav .reader-login {
+    justify-content: center;
+    min-width: 78px;
+    min-height: 38px;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: #287995;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(40, 121, 149, 0.18);
+}
+
+.reader-shell.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px clamp(16px, 2.3vw, 32px) 40px;
+}
+
+.reader-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(250px, 1fr);
+    align-items: start;
+    gap: 14px;
+}
+
+.reader-column {
+    min-width: 0;
+}
+
+.reader-column > div > .relative.h-full {
+    overflow: visible;
+}
+
+.main-contant {
+    margin: 0 0 14px;
+    color: #1e293b;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.reader-column .bg-background.py-3 {
+    position: static;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(22, 34, 51, 0.05);
+}
+
+.reader-column .bg-background.py-3 > .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.reader-column .bg-background.py-3 .gap-6 {
+    gap: 10px;
+}
+
+.reader-column .bg-background.py-3 button {
+    min-width: 40px;
+    min-height: 38px;
+    border: 0;
+    background: #edf2f6;
+    color: #607186;
+    cursor: pointer;
+}
+
+.reader-column .bg-background.py-3 button:hover {
+    background: #dceaf0;
+    color: #247b9b;
+}
+
+.reader-column .bg-background.py-3 p {
+    margin: 0;
+    color: #536174;
+    font-size: 12px;
+}
+
+.reader-column .bg-background.py-3 input {
+    width: 42px;
+    min-height: 34px;
+    border: 1px solid #e1e6ec;
+    border-radius: 999px;
+    background: #f7f9fb;
+    text-align: center;
+}
+
+.reader-column .bg-background.py-3 .min-w-fit {
+    min-width: 0;
+}
+
+.reader-column .w-full.h-full.bg-background {
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #d9dde4;
+    border-radius: 8px;
+    background: #252525;
+    box-shadow: 0 8px 24px rgba(22, 34, 51, 0.12);
+}
+
+.reader-column .swiper {
+    height: min(72vh, 760px);
+    min-height: 420px;
+    overflow: auto;
+    background: #252525;
+    scrollbar-color: #919191 #f5f5f5;
+    scrollbar-width: auto;
+}
+
+.reader-column .swiper-wrapper {
+    height: 100%;
+}
+
+.reader-column .swiper-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.reader-column .swiper-slide .main-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.reader-column .swiper-slide img {
+    width: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.reader-sidebar {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+}
+
+.sidebar-card {
+    padding: 16px;
+    border: 1px solid #e6e8ed;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(22, 34, 51, 0.05);
+}
+
+.sidebar-card h2 {
+    margin: 0 0 10px;
+    color: #253247;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.creator-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.creator-avatar {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.creator-card h2 {
+    margin: 0 0 2px;
+}
+
+.creator-card h2 i {
+    color: #3289a5;
+}
+
+.creator-card p,
+.sidebar-label {
+    margin: 0;
+    color: #788497;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.creator-card .follower-count {
+    margin-top: 3px;
+    color: #38465a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.book-details {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+}
+
+.book-details div {
+    display: grid;
+    grid-template-columns: minmax(70px, 0.8fr) 1.4fr;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.book-details dt {
+    color: #788497;
+}
+
+.book-details dd {
+    margin: 0;
+    color: #273449;
+    font-weight: 600;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 6px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: #f0f2f5;
+    color: #4b5869;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .reader-topbar {
+        display: grid;
+        grid-template-columns: auto minmax(140px, 1fr);
+        gap: 10px 14px;
+    }
+
+    .reader-search {
+        width: auto;
+    }
+
+    .reader-nav {
+        grid-column: 1 / -1;
+        justify-content: space-between;
+    }
+
+    .reader-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .reader-sidebar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .reader-topbar {
+        position: static;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px 12px;
+        padding: 10px 14px;
+    }
+
+    .reader-brand {
+        font-size: 12px;
+    }
+
+    .reader-brand img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .reader-search {
+        width: auto;
+        min-width: 0;
+        height: 36px;
+    }
+
+    .reader-nav {
+        grid-column: 1 / -1;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .reader-nav a {
+        gap: 4px;
+        font-size: 11px;
+    }
+
+    .reader-nav .reader-login {
+        min-width: 58px;
+        min-height: 34px;
+        padding: 0 12px;
+    }
+
+    .reader-shell.container {
+        padding: 14px 12px 28px;
+    }
+
+    .reader-column .bg-background.py-3 > .flex {
+        justify-content: space-between;
+    }
+
+    .reader-column .bg-background.py-3 .gap-6 {
+        gap: 6px;
+    }
+
+    .reader-column .swiper {
+        height: 68svh;
+        min-height: 320px;
+    }
+
+    .reader-sidebar {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
